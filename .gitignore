@@ -29,3 +29,7 @@ dist/
 # OS files
 .DS_Store
 Thumbs.db
+
+# PRD Documents
+*.docx
+TraceLab_PRD_v2.docx

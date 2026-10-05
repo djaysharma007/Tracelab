@@ -1,0 +1,124 @@
+@import '@fontsource/fraunces';
+@import '@fontsource/instrument-sans';
+@import '@fontsource/jetbrains-mono';
+
+:root {
+  /* Palette (PRD Section 7.1) */
+  --color-ash-grey: #CCD7C5;
+  --color-almond-silk: #EFD2CB;
+  --color-camel: #C7A27C;
+  --color-blush-rose: #D65780;
+  --color-sweet-salmon: #EE9480;
+
+  /* Derived Palette */
+  --color-ink: #2A2024;
+  --color-paper: #FBF6F3;
+  --color-rose-deep: #A93A63;
+  --color-line: #E3CFC8;
+  --color-ink-muted: #6B5F63;
+
+  /* Algorithm State Colors (PRD Section 7.2) */
+  --state-default-fill: var(--color-almond-silk);
+  --state-comparing-fill: var(--color-sweet-salmon);
+  --state-swapping-fill: var(--color-blush-rose);
+  --state-sorted-fill: var(--color-ash-grey);
+  --state-pointer-fill: var(--color-camel);
+  --state-rejected-fill: var(--color-paper);
+  --state-found-outline: var(--color-rose-deep);
+
+  /* Typography (PRD Section 7.3) */
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Instrument Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Geometry & Layout */
+  --radius: 4px;
+  --unit: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+code, pre, .mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+button, input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+select, input, textarea {
+  background-color: var(--color-ink) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--color-camel) !important;
+  border-radius: var(--radius);
+  padding: 6px 10px;
+}
+
+select option {
+  background-color: var(--color-ink) !important;
+  color: #ffffff !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-line) !important;
+  opacity: 0.8;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid var(--color-line);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  transition: all 0.15s ease-out;
+}
+
+button:hover {
+  background-color: var(--color-almond-silk);
+}
+
+button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--color-rose-deep);
+  outline-offset: 2px;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--color-rose-deep);
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-blush-rose);
+}
+
+/* Hairline layout containers */
+.panel {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-paper);
+}
