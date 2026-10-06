@@ -22,9 +22,6 @@ export default function Header({ algorithmName, category }) {
         <span style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700, color: 'var(--color-ink)' }}>
           TraceLab
         </span>
-        <span style={{ fontSize: 12, fontFamily: 'var(--font-mono)', color: 'var(--color-ink-muted)', background: 'var(--color-almond-silk)', padding: '2px 6px', borderRadius: 4 }}>
-          v2.0
-        </span>
       </Link>
 
       {/* Active Algorithm Title if in Lab route */}

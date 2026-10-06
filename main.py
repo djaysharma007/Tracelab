@@ -32,7 +32,7 @@ def main():
 
     print()
     print("=" * 60)
-    print("                      TRACELAB v2.0")
+    print("                           TRACELAB")
     print("   Interactive Data Structures & Algorithms Laboratory")
     print("=" * 60)
     if args.dev:
