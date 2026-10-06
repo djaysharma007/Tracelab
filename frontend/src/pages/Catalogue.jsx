@@ -85,7 +85,7 @@ export default function Catalogue() {
                 marginBottom: 12,
                 color: 'var(--color-ink)'
               }}>
-                {catName} ({algList.length})
+                {catName}
               </h2>
 
               <div style={{ border: '1px solid var(--color-line)', borderRadius: 'var(--radius)', overflow: 'hidden' }}>
